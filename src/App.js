@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import About from './components/About';
 
 function App() {
 
@@ -50,9 +51,19 @@ function App() {
 
   ])
 
+  //const [aboutSelected, setAboutSelected] = useState(true);
+
+
+
   return (
-    <div className="App">
-      <Nav />
+    <div>
+      <Nav 
+      projects={projects}
+      
+      />
+      <main>
+        <About />
+      </main>
     </div>
   );
 }
