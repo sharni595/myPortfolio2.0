@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+#menu{
+    display: block;
+}
+
 body {
-    background: rgb(236, 233, 228);
+    background: rgb(255, 255, 255);
 }
 
 header {
@@ -26,3 +32,7 @@ header, li {
     font-weight: bold;
     color: rgb(189, 180, 180);
 }
+
+.navActive {
+    color: rgb(112, 103, 103);
+  }
