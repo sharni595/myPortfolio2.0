@@ -55,4 +55,8 @@ header, li {
     display: block;
 }
 
+.error-text {
+    color: red;
+    
+}
 

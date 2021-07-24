@@ -40,27 +40,38 @@ function Contact() {
 
     return (
         <section>
-            <h1 data-testid="contacttag" className="text-5xl font-bold text-center p-4">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea rows="5" name="message" defaultValue={message} onBlur={handleChange}/>
-                </div>
-                {errorMessage && (
+            <h1 className="text-5xl font-bold text-center p-4">Contact me</h1>
+           <div className="flex justify-center h-screen mx-auto">
+                <form id="contact-form" onSubmit={handleSubmit}>
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" name="name" 
+                            defaultValue={name} onBlur={handleChange}
+                            className="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300"
+                            />
                     </div>
-                )}
-                <button data-testid="submit" type="submit">Submit</button>
-            </form>
+                    <div>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" name="email" 
+                            defaultValue={email} onBlur={handleChange}
+                            className="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300"
+                            />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea rows="5" name="message" 
+                                defaultValue={message} onBlur={handleChange}
+                                className="resize-none border rounded-md block appearance-none placeholder-gray-500 placeholder-opacity-100 border-light-blue-400 w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300 h-56"
+                                />
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <button className="w-full bg-gray-600 hover:bg-gray-900 text-white font-bold py-3 px-4 rounded text-2xl" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     );
 }
