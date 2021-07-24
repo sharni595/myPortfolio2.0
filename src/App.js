@@ -75,7 +75,7 @@ function App() {
       resumeSelected={resumeSelected}
       setResumeSelected={setResumeSelected}
       />
-      <main>
+      <main className="min-h-screen">
 
 
 

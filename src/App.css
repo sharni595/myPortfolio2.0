@@ -10,9 +10,15 @@
 
 body {
     background: rgb(255, 255, 255);
+    color: rgb(112, 103, 103);
+    min-height: 100%
 }
 
 header {
+    background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
+}
+
+footer {
     background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
 }
 
@@ -35,4 +41,4 @@ header, li {
 
 .navActive {
     color: rgb(112, 103, 103);
-  }
+}

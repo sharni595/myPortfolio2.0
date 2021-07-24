@@ -10,8 +10,10 @@ function About() {
                 <img src={profileImage} className="my-2" alt="cover" />
             </div>
             <div className="p-5">
-                <h1 id="about" className="font-bold ">WHO AM I?</h1>
-                <div className="my-2">
+                <h1 id="about" className="font-bold text-5xl">WHO AM I?</h1>
+                <hr />
+                <br />
+                <div className="my-2 text-xl">
                     <p>
                         A full-stack web developer working with a background in administration and customer 
                         service to create the ultimate user experience on the web. Currently working towards 
