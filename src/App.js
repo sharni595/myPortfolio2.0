@@ -65,7 +65,6 @@ function App() {
   return (
     <div>
       <Nav 
-      projects={projects}
       aboutSelected={aboutSelected}
       setAboutSelected={setAboutSelected}
       portfolioSelected={portfolioSelected}
@@ -79,7 +78,7 @@ function App() {
 
 
 
-        {portfolioSelected ? (<Portfolio />)
+        {portfolioSelected ? (<Portfolio projects={projects}/>)
           : contactSelected ? (<Contact />)
           : resumeSelected ? (<Resume />)
           : (<About />)}

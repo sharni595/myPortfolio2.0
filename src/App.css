@@ -42,3 +42,17 @@ header, li {
 .navActive {
     color: rgb(112, 103, 103);
 }
+
+.img:hover {
+    opacity: 0.2;
+}
+
+.img:hover ~ #info{
+    display: block;
+}
+
+#info:hover {
+    display: block;
+}
+
+
