@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsDownload } from 'react-icons/bs';
-import resume from '../../assets/resume/SharniResume.pdf';
+import resume from '../../assets/resume/JulyResume2021.pdf';
 
 function Resume() {
     return(
