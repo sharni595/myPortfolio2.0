@@ -25,11 +25,11 @@ function App() {
       image: "painterly.png"
     },
     {
-      name: "Budget Tracker",
-      description: "A simple app that uses PWA conventions to allow users to track income and expenses",
-      url: "https://pure-bayou-78480.herokuapp.com/",
-      github: "https://github.com/sharni595/pwa-budget-tracker",
-      image: "budget-tracker.png"
+      name: "OnTheRoad",
+      description: "An app that allows users to plan and track roadtrips with friends, build using GraphQL, MongoDB and React",
+      url: "https://ontheroadapp.herokuapp.com/",
+      github: "https://github.com/sharni595/OnTheRoad",
+      image: "ontheroad.png"
     },
     {
       name: "Generic Blog Site",
