@@ -52,8 +52,9 @@ function Contact() {
 
     return (
         <section>
+            <span>**This section is not yet functional. It is a current side project.</span>
             <h1 className="text-5xl font-bold text-center p-4">Contact me</h1>
-           <div className="flex justify-center h-screen mx-auto">
+            <div className="flex justify-center h-screen mx-auto">
                 <form id="contact-form" onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="name">Name:</label>
