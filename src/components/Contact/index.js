@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from 'react';
+//import { validateEmail } from '../../utils/helpers';
 import emailjs from 'emailjs-com';
+//temporarily removed useState for deployment purposes
 
 function Contact() {
 
