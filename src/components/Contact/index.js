@@ -83,7 +83,7 @@ function Contact() {
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )} */}
-                    <button className="w-full bg-gray-600 hover:bg-gray-900 text-white font-bold py-3 px-4 rounded text-2xl" type="submit">Submit</button>
+                    <button className="w-full bg-gray-600 text-white font-bold py-3 px-4 rounded text-2xl" type="submit">Submit</button>
                 </form>
             </div>
         </section>

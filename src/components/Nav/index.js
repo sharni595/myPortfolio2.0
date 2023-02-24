@@ -1,6 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../../App.scss';
 import '../../css/style.css'
+import { BsDownload } from 'react-icons/bs';
+import resume from '../../assets/resume/ProperResume.pdf';
 
 function Nav(props) {
     
@@ -11,19 +13,10 @@ function Nav(props) {
         setPortfolioSelected,
         contactSelected,
         setContactSelected,
-        resumeSelected,
-        setResumeSelected,
     } = props;
 
     return(
-        <header className="lg:px-16 px-6 text-gray-100 flex flex-wrap items-center lg:py-3 py-2">
-            <div className="flex-1 flex justify-center items-center lg:justify-between">
-                <h2 className="text-4xl milky">
-                    <a href="/">
-                        <span role="img">SHARNI ZAUGG</span>
-                    </a>
-                </h2>
-            </div>
+        <header className="lg:px-24 px-6 pt-6 flex flex-wrap lg:justify-end">
             <div className="menu hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
                 <nav>
                     <ul className="flex items-center justify-center text-base pt-4 lg:pt-0">
@@ -32,7 +25,6 @@ function Nav(props) {
                                 setAboutSelected(true);
                                 setPortfolioSelected(false);
                                 setContactSelected(false);
-                                setResumeSelected(false);
                             }}>
                                 ABOUT ME
                             </span>
@@ -42,7 +34,6 @@ function Nav(props) {
                                 setAboutSelected(false);
                                 setPortfolioSelected(true);
                                 setContactSelected(false);
-                                setResumeSelected(false);
                             }}>
                                 PROJECTS
                             </span>
@@ -52,20 +43,15 @@ function Nav(props) {
                                 setAboutSelected(false);
                                 setPortfolioSelected(false);
                                 setContactSelected(true);
-                                setResumeSelected(false);
                             }}>
                                 CONTACT
                             </span>
                         </li>
-                        <li className={`mx-3 cursor-pointer ${resumeSelected && 'navActive'}`}>
-                            <span onClick={() => {
-                                setAboutSelected(false);
-                                setPortfolioSelected(false);
-                                setContactSelected(false);
-                                setResumeSelected(true);
-                            }}>
+                        <li className="mx-3 cursor-pointer">
+                            <a href={resume} download="ProperResume.pdf" className="flex flex-row items-center mx-auto p-4 resume text-l rounded-lg">
                                 RESUME
-                            </span>
+                                <BsDownload className="ml-2"/>
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+
+
+
+#menu{
+    display: block;
+}
+
+* {
+    font-family: 'Martel', serif;
+}
+
+header {
+    li {
+        font-weight: bold;
+    }
+}
+
+.about {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-areas:
+            "aboutme profile extra";
+    padding: 50px 100px;
+    .about-me {
+        grid-area: aboutme;
+        h1 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+    .profile {
+        grid-area: profile;
+        // overflow: hidden;
+    }
+    .extra {
+        grid-area: extra;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 390px;
+        right: -110px;
+        color: #a95e41;
+    }
+}
+
+.navActive {
+    color: #646a69;
+}
+
+.img:hover {
+    opacity: 0.2;
+}
+
+.img:hover ~ #info{
+    display: block;
+}
+
+#info:hover {
+    display: block;
+}
+
+.error-text {
+    color: red;
+}
+
+.resume {
+    background-color: #646a69;
+    color:rgb(255, 255, 255);
+}

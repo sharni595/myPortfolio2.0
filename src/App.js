@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -58,7 +58,6 @@ function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
 
 
 
@@ -71,8 +70,6 @@ function App() {
       setPortfolioSelected={setPortfolioSelected}
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
       />
       <main className="min-h-screen">
 
@@ -80,7 +77,6 @@ function App() {
 
         {portfolioSelected ? (<Portfolio projects={projects}/>)
           : contactSelected ? (<Contact />)
-          : resumeSelected ? (<Resume />)
           : (<About />)}
  
       </main>

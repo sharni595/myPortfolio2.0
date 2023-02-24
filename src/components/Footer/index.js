@@ -1,20 +1,21 @@
 import React from 'react';
-import { SiGithub } from 'react-icons/si';
-import { SiLinkedin } from 'react-icons/si';
-import { SiInstagram } from 'react-icons/si';
+
 
 function Footer() {
     return(
         <footer>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row justify-center align-center">
                 <a href="https://github.com/sharni595" className="px-5 py-3 cursor-pointer">
-                    <SiGithub size={30}/>
+                    github
                 </a>
                 <a href="https://www.linkedin.com/in/sharni-zaugg-3997b01b9/" className="px-5 py-3 cursor-pointer">
-                    <SiLinkedin size={30}/>
+                    linkedin
                 </a>
                 <a href="https://www.instagram.com/sharni595/" className="px-5 py-3 cursor-pointer">
-                    <SiInstagram size={30}/>
+                    instagram
+                </a>
+                <a href="https://www.fiverr.com/sharni595/create-your-landing-page" className="px-5 py-3 cursor-pointer">
+                    fiverr
                 </a>
             </div>
         </footer>
