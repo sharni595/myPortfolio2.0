@@ -45,7 +45,7 @@ function About() {
                 <img src={profileImage} className="my-2" alt="cover" />
             </div>
             <div className='extra text-3xl'>
-                <span>BRIE &middot; CAMEMBERT &middot; GRUYERE</span>
+                <span>FULL &middot; STACK &middot; DEVELOPER</span>
             </div>
         </section>
     )
